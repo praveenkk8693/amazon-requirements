@@ -8,7 +8,7 @@ public class CommonProperties {
 	
 	public static String getPropertyValue(String key) throws IOException {
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("D:\\projects\\com-amazon-cucmber\\src\\test\\resources\\frequentlyChangingProps.properties");
+		FileInputStream fis = new FileInputStream("D:\\seleniumgitprojectslocalrep\\com-amazon-cucmber\\src\\test\\resources\\features\\commonprops.properties");
 		prop.load(fis);
 		return prop.getProperty(key);
 	}

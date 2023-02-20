@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-20T01:08:07.518Z",
+        "line": 5,
+        "name": "validating ram size",
+        "description": "",
+        "id": "validating-5-rated--hp-laptop-to-check-ramsize;validating-ram-size",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7706719200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "loginto amazon",
+            "match": {
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.loginto_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d110.0.5481.96)\nBuild info: version: \u00274.4.0\u0027, revision: \u0027e5c75ed026a\u0027\nSystem info: host: \u0027DESKTOP-JF3CUIR\u0027, ip: \u0027192.168.0.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002716.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [7da437585f923d089a76bf94afb7b95a, sendKeysToElement {id\u003d88d0f021-7f56-4a11-9cdd-22aa9ee5e652, value\u003d[Ljava.lang.CharSequence;@2291d9a0}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\\Users\\user\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51312/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on WINDOWS (7da437585f923d089a76bf94afb7b95a)] -\u003e xpath: //span[@id\u003d\u0027nav-search-submit-text\u0027]]\nSession ID: 7da437585f923d089a76bf94afb7b95a\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)\r\n\tat com.amazon.pageobjects.ProductCatalogPageObject.entersearchAndclick(ProductCatalogPageObject.java:22)\r\n\tat com.amazon.stepdefs.ValidateRamSizeStepdef.search_hp_laptops_and_click_on_rated_laptop(ValidateRamSizeStepdef.java:41)\r\n\tat ✽.search hp laptops and click on 5 rated laptop(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:7)\r\n",
+              "duration": 2548838400,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "search hp laptops and click on 5 rated laptop",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 31
+                }
+              ],
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.search_hp_laptops_and_click_on_rated_laptop(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "validate the ram size is diplayed or not",
+            "match": {
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "validating 5 rated  hp laptop to check ramsize",
+    "description": "",
+    "id": "validating-5-rated--hp-laptop-to-check-ramsize",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/validatehplaptop.feature",
+    "tags": []
+  }
+]
