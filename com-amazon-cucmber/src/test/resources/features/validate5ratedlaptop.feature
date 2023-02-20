@@ -1,4 +1,4 @@
-Feature: validating 5 rated laptop to check ramsize
+Feature: validating 5 rated  hp laptop to check ramsize
 
 
 
