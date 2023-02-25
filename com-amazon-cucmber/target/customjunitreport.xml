@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.557">
-    <testcase classname="validating 5 rated  hp laptop to check ramsize" name="validating ram size" time="10.324">
-        <failure message="element not interactable&#10;  (Session info: chrome=110.0.5481.96)&#10;Build info: version: '4.4.0', revision: 'e5c75ed026a'&#10;System info: host: 'DESKTOP-JF3CUIR', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [7da437585f923d089a76bf94afb7b95a, sendKeysToElement {id=88d0f021-7f56-4a11-9cdd-22aa9ee5e652, value=[Ljava.lang.CharSequence;@2291d9a0}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51312/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (7da437585f923d089a76bf94afb7b95a)] -&gt; xpath: //span[@id='nav-search-submit-text']]&#10;Session ID: 7da437585f923d089a76bf94afb7b95a" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given loginto amazon........................................................passed
-When search hp laptops and click on 5 rated laptop..........................failed
-Then validate the ram size is diplayed or not...............................skipped
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.02">
+    <testcase classname="validating 5 rated  hp laptop to check ramsize" name="validating ram size" time="14.867">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given loginto amazon........................................................passed
+When search hp laptops and click on 5 rated laptop..........................passed
+Then validate the ram size is diplayed or not...............................failed
 
 StackTrace:
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=110.0.5481.96)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'DESKTOP-JF3CUIR', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7da437585f923d089a76bf94afb7b95a, sendKeysToElement {id=88d0f021-7f56-4a11-9cdd-22aa9ee5e652, value=[Ljava.lang.CharSequence;@2291d9a0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51312/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (7da437585f923d089a76bf94afb7b95a)] -> xpath: //span[@id='nav-search-submit-text']]
-Session ID: 7da437585f923d089a76bf94afb7b95a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at com.amazon.pageobjects.ProductCatalogPageObject.entersearchAndclick(ProductCatalogPageObject.java:22)
-	at com.amazon.stepdefs.ValidateRamSizeStepdef.search_hp_laptops_and_click_on_rated_laptop(ValidateRamSizeStepdef.java:41)
-	at ✽.search hp laptops and click on 5 rated laptop(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:7)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not(ValidateRamSizeStepdef.java:48)
+	at ✽.validate the ram size is diplayed or not(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:8)
 ]]></failure>
     </testcase>
 </testsuite>

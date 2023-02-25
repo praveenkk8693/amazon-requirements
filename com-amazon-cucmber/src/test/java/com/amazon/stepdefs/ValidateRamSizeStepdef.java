@@ -30,13 +30,13 @@ public class ValidateRamSizeStepdef {
 	    driver = new ChromeDriver();
 	    driver.get(CommonProperties.getPropertyValue("url"));
 	    landingAndLoginPageObject = new LandingAndLoginPageObject(driver);
-	    landingAndLoginPageObject.clickOnSignIn();
-	    LoginCredentials loginCredentials = DataInExcel.getCredentials();
-	    landingAndLoginPageObject.enterCredentialsAndclickLogin(loginCredentials);
+//	    landingAndLoginPageObject.clickOnSignIn();
+//	    LoginCredentials loginCredentials = DataInExcel.getCredentials();
+//	    landingAndLoginPageObject.enterCredentialsAndclickLogin(loginCredentials);
 	}
 
 	@When("search hp laptops and click on {int} rated laptop")
-	public void search_hp_laptops_and_click_on_rated_laptop(Integer int1) {
+	public void search_hp_laptops_and_click_on_rated_laptop(Integer int1) throws InterruptedException {
 		productCatalogPageObject = new ProductCatalogPageObject(driver);
 		productCatalogPageObject.entersearchAndclick();
 		productCatalogPageObject.clickOn5ratedlaptop();
