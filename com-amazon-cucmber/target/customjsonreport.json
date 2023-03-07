@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-02-25T10:44:59.782Z",
+        "start_timestamp": "2023-03-07T01:20:52.431Z",
         "line": 5,
         "name": "validating ram size",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3705528300,
+              "duration": 8722856600,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 10861293100,
+              "duration": 9676454000,
               "status": "passed"
             },
             "line": 7,
@@ -43,8 +43,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not(ValidateRamSizeStepdef.java:48)\r\n\tat ✽.validate the ram size is diplayed or not(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:8)\r\n",
-              "duration": 217107300,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not(ValidateRamSizeStepdef.java:50)\r\n\tat ✽.validate the ram size is diplayed or not(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:8)\r\n",
+              "duration": 457401400,
               "status": "failed"
             },
             "line": 8,
@@ -53,6 +53,51 @@
               "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-07T01:21:11.357Z",
+        "line": 11,
+        "name": "validating xpaths",
+        "description": "",
+        "id": "validating-5-rated--hp-laptop-to-check-ramsize;validating-xpaths",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8289453800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "open amazon",
+            "match": {
+              "location": "com.amazon.stepdefs.Xpaths.openingAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1743287400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "print and validate xpath result",
+            "match": {
+              "location": "com.amazon.stepdefs.Xpaths.validateXpath()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
           }
         ]
       }

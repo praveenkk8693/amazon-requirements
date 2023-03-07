@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.amazon.browseroptions.BrowserOptions;
 import com.amazon.credentials.LoginCredentials;
 import com.amazon.pageobjects.LandingAndLoginPageObject;
 import com.amazon.pageobjects.ProductCatalogPageObject;
@@ -26,8 +27,9 @@ public class ValidateRamSizeStepdef {
 	 ProductDetailsPageObject productDetailsPageObject;
 	@Given("loginto amazon")
 	public void loginto_amazon() throws IOException {
-	    System.setProperty("webdriver.chrome.driver", "D:\\\\softwares\\\\chromedriver_win32_109\\\\chromedriver.exe");
-	    driver = new ChromeDriver();
+	    //System.setProperty("webdriver.chrome.driver", "D:\\\\softwares\\\\chromedriver_win32_109\\\\chromedriver.exe");
+	    //driver = new ChromeDriver();
+		driver = BrowserOptions.setupOptions("remote");
 	    driver.get(CommonProperties.getPropertyValue("url"));
 	    landingAndLoginPageObject = new LandingAndLoginPageObject(driver);
 //	    landingAndLoginPageObject.clickOnSignIn();

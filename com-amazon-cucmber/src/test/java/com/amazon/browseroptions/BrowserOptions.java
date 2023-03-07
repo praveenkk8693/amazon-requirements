@@ -13,8 +13,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class BrowserOptions {
-	WebDriver driver;
-	public void setupOptions(String browserType) throws MalformedURLException {
+	public static WebDriver driver;
+	public static WebDriver setupOptions(String browserType) throws MalformedURLException {
 		if(browserType.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "");
 			
@@ -26,10 +26,10 @@ public class BrowserOptions {
 			proxy.setHttpProxy("http_proxy-url:port");
 			proxy.setSslProxy("https_proxy-url:port");
 			options.setCapability("proxy", proxy);
-			driver = new ChromeDriver(options);
+			return driver = new ChromeDriver(options);
 			
 		}
-        if(browserType.equals("remote")){
+		else{
         	MutableCapabilities sauceoptions = new MutableCapabilities();
         	sauceoptions.setCapability("build", "java-W3C-Examples");
         	sauceoptions.setCapability("name", "testing top rated and ram size");
@@ -38,9 +38,9 @@ public class BrowserOptions {
         	cap.setCapability("browserVersion", "latest");
         	cap.setCapability("platformName", "windows 10");
         	cap.setCapability("sauce:options", sauceoptions);
-        	URL  remoteUrl =  new URL("https://oauth-praveenkk8693-73b97:6b5850da-7784-43fb-b196-063e168bc514@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
+        	URL  remoteUrl =  new URL("https://oauth-chittiseena1521-2f60e:f5220b5c-1524-409e-aa24-f8e20f29fa3f@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
         	
-			driver =  new RemoteWebDriver(remoteUrl,cap);
+			return driver =  new RemoteWebDriver(remoteUrl,cap);
 			
 		}
 	}
