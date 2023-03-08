@@ -3,7 +3,7 @@ package com.amazon.pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.amazon.credentials.LoginCredentials;
+
 
 public class LandingAndLoginPageObject {
 	WebDriver driver;
@@ -21,13 +21,13 @@ public class LandingAndLoginPageObject {
 		driver.findElement(signIn).click();
 	}
 	
-	public void enterCredentialsAndclickLogin(LoginCredentials loginCredentials) {
-		
-		driver.findElement(emailbox).sendKeys(loginCredentials.getUserName());
-		driver.findElement(continueButton).click();
-		driver.findElement(passwordbox).sendKeys(loginCredentials.getPassword());
-		driver.findElement(signButton).click();
-	}
+//	public void enterCredentialsAndclickLogin(LoginCredentials loginCredentials) {
+//		
+//		driver.findElement(emailbox).sendKeys(loginCredentials.getUserName());
+//		driver.findElement(continueButton).click();
+//		driver.findElement(passwordbox).sendKeys(loginCredentials.getPassword());
+//		driver.findElement(signButton).click();
+//	}
 	
 			
 
