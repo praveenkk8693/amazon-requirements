@@ -1,0 +1,112 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-09T00:39:27.547Z",
+        "line": 5,
+        "name": "validating ram size",
+        "description": "",
+        "id": "validating-5-rated--hp-laptop-to-check-ramsize;validating-ram-size",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7921897600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "loginto amazon",
+            "match": {
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.loginto_amazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8976321600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "search hp laptops and click on 5 rated laptop",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 31
+                }
+              ],
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.search_hp_laptops_and_click_on_rated_laptop(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not(ValidateRamSizeStepdef.java:50)\r\n\tat ✽.validate the ram size is diplayed or not(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:8)\r\n",
+              "duration": 456153100,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "validate the ram size is diplayed or not",
+            "match": {
+              "location": "com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-09T00:39:44.987Z",
+        "line": 11,
+        "name": "validating xpaths",
+        "description": "",
+        "id": "validating-5-rated--hp-laptop-to-check-ramsize;validating-xpaths",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7420278500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "open amazon",
+            "match": {
+              "location": "com.amazon.stepdefs.Xpaths.openingAmazon()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1678369700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "print and validate xpath result",
+            "match": {
+              "location": "com.amazon.stepdefs.Xpaths.validateXpath()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "validating 5 rated  hp laptop to check ramsize",
+    "description": "",
+    "id": "validating-5-rated--hp-laptop-to-check-ramsize",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/validatehplaptop.feature",
+    "tags": []
+  }
+]

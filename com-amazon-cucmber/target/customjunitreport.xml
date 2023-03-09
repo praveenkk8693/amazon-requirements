@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="26.668">
+    <testcase classname="validating 5 rated  hp laptop to check ramsize" name="validating ram size" time="17.422">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Given loginto amazon........................................................passed
+When search hp laptops and click on 5 rated laptop..........................passed
+Then validate the ram size is diplayed or not...............................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.amazon.stepdefs.ValidateRamSizeStepdef.validate_the_ram_size_is_diplayed_or_not(ValidateRamSizeStepdef.java:50)
+	at ✽.validate the ram size is diplayed or not(file:///D:/seleniumgitprojectslocalrep/com-amazon-cucmber/src/test/resources/features/validatehplaptop.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="validating 5 rated  hp laptop to check ramsize" name="validating xpaths" time="9.102">
+        <system-out><![CDATA[Given open amazon...........................................................passed
+Then print and validate xpath result........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
